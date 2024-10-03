@@ -19,13 +19,11 @@ body {
     font-size: 1rem;
 }
 
-body,
-html,
-.website-wrapper {
+body,html,.website-wrapper{
     height: 100%;
 }
 
-.website-wrapper {
+.website-wrapper{
     display: flex;
     flex-direction: column;
 }
@@ -46,34 +44,20 @@ html,
     align-items: center;
     justify-content: space-between;
     max-width: 90rem;
-    margin: 0 1rem;
+    margin: 0 auto;
 }
 
-.navbar-container .icon {
+.navbar-container .icon{
     width: 2rem;
     height: 2rem;
 }
 
-.section-content {
-    padding: 1rem 1.5rem;
-}
-
-.section-content h1 {
-    font-size: 2rem;
-    color: var(--primary-color);
-}
-
-.section-content p {
-    font-size: 1.125rem;
-    color: var(--text-color);
-}
 
 .navbar-toggle {
     display: none;
     cursor: pointer;
     transition: transform var(--transition-speed) ease;
-}
-
+}z
 .navbar-toggle img {
     width: 2rem;
     height: 2rem;
@@ -81,6 +65,7 @@ html,
     transition: transform var(--transition-speed) ease;
 }
 
+/* Navbar Menu */
 .navbar-menu {
     display: flex;
     gap: 2rem;
@@ -109,6 +94,7 @@ html,
     padding: 1.5625rem 1.25rem;
     text-align: center;
     margin-top: 2.5rem;
+    animation: fadeInUp 1s ease-out;
 }
 
 .footer-container {
@@ -146,6 +132,12 @@ html,
     filter: brightness(0) invert(1);
 }
 
+.icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    filter: brightness(0) invert(1);
+}
+
 main {
     max-width: 75rem;
     margin: 2.5rem auto;
@@ -155,8 +147,58 @@ main {
 
 section {
     margin-bottom: 3.75rem;
+    animation: fadeIn 1s ease-out;
 }
 
+h1 {
+    font-size: 2rem;
+    margin-bottom: 0.9375rem;
+    color: var(--primary-color);
+}
+
+p {
+    font-size: 1.125rem;
+    color: #555;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(1.25rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(1.25rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-0.625rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
 @media screen and (max-width: 768px) {
     .navbar-menu {
         flex-direction: column;
@@ -167,6 +209,7 @@ section {
         padding: 1.25rem;
         border-radius: 0.3125rem;
         display: none;
+        animation: slideDown 0.5s forwards;
     }
 
     .navbar-menu.active {
@@ -180,10 +223,4 @@ section {
     .footer {
         margin-top: 1.5rem;
     }
-}
-
-.icon {
-    width: 1.5rem;
-    height: 1.5rem;
-    filter: brightness(0) invert(1);
 }
