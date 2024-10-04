@@ -14,34 +14,43 @@
 
 <body>
     <div class="website-wrapper">
-        <nav class="navbar">
-            <div class="navbar-container">
-                <a href="/" aria-label="Home">
-                    <img src="icons/home.svg" alt="Home" class="icon">
-                </a>
-                <ul class="navbar-menu">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+        <header class="header">
+        <div class="header-content">
+            <a href="#" aria-label="Home">
+                <img src="icons/home.svg" alt="Home" class="logo">
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
                 </ul>
-                <div class="navbar-toggle" id="mobile-menu" aria-label="Toggle navigation">
-                    <img src="icons/hamburger.svg" alt="Open Menu" class="icon">
-                </div>
+            </nav>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
             </div>
-        </nav>
-
+        </div>
+        </header>
         <main>
-            <section id="about" class="section-content">
+            <section id="about">
                 <h1>About Me</h1>
                 <p>Welcome to my website! This is a placeholder for the About section.</p>
             </section>
 
-            <section id="projects" class="section-content">
+            <section id="projects">
                 <h1>Projects</h1>
                 <p>Here you can showcase your projects.</p>
             </section>
 
-            <section id="contact" class="section-content">
+            <section id="contact">
                 <h1>Contact</h1>
                 <p>Get in touch with me through this section.</p>
             </section>
