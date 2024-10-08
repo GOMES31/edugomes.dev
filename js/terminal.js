@@ -12,7 +12,7 @@ const terminalLines = [
     '[<a href="resume.pdf" target="_blank">resume.pdf</a>]',
     '',
     '<span class="name">Skills</span>',
-    '[HTML, CSS, Java, SpringBoot, Thymeleaf]'
+    '[HTML, CSS, Javascript, PHP, C#, Java, SpringBoot, Thymeleaf, SQL Server, Postgres,]'
 ];
 
 let currentLine = 0;
