@@ -70,6 +70,10 @@ body,html,.website-wrapper{
     transition: all 0.2s;
 }
 
+.header-content a{
+    padding-left: 0.5rem;
+}
+
 /* Footer */
 .footer {
     background-color: var(--primary-color);
